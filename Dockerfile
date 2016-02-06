@@ -1,5 +1,5 @@
-FROM base/archlinux:2015.06.01
-MAINTAINER binhex
+FROM mockersf/rpi2-archlinuxarm:20151201
+MAINTAINER spewu
 
 # additional files
 ##################

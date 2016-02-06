@@ -4,12 +4,7 @@
 set -e
 
 # update arch repo list with uk mirrors
-echo 'Server = http://archlinux.mirrors.uk2.net/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo 'Server = http://mirror.cinosure.com/archlinux/$repo/os/$arch' >> /etc/pacman.d/mirrorlist
-echo 'Server = http://mirrors.manchester.m247.com/arch-linux/$repo/os/$arch' >> /etc/pacman.d/mirrorlist
-echo 'Server = http://www.mirrorservice.org/sites/ftp.archlinux.org/$repo/os/$arch' >> /etc/pacman.d/mirrorlist
-echo 'Server = http://arch.serverspace.co.uk/arch/$repo/os/$arch' >> /etc/pacman.d/mirrorlist
-echo 'Server = http://mirror.bytemark.co.uk/archlinux/$repo/os/$arch' >> /etc/pacman.d/mirrorlist
+echo 'Server = http://mirror.archlinuxarm.org/armv7h/$repo' > /etc/pacman.d/mirrorlist
 
 # update packages ignoring filesystem (docker limitation)
 pacman -Syu --ignore filesystem --noconfirm
